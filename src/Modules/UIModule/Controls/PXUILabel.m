@@ -275,23 +275,23 @@ NSString *const kDefaultCacheLabelLineBreakMode = @"label.lineBreakMode";
 -(void)setText:(NSString *)text
 {
     callSuper1(SUPER_PREFIX, _cmd, text);
-    
-    if([self preventStyling] == NO)
-    {
-        [PXStyleUtils invalidateStyleableAndDescendants:self];
-        [self updateStylesNonRecursively];
-    }
+//    
+//    if([self preventStyling] == NO)
+//    {
+//        [PXStyleUtils invalidateStyleableAndDescendants:self];
+//        [self updateStylesNonRecursively];
+//    }
 }
 
 -(void)setAttributedText:(NSAttributedString *)attributedText
 {
     callSuper1(SUPER_PREFIX, _cmd, attributedText);
     
-    if([self preventStyling] == NO)
-    {
-        [PXStyleUtils invalidateStyleableAndDescendants:self];
-        [self updateStylesNonRecursively];
-    }
+//    if([self preventStyling] == NO)
+//    {
+//        [PXStyleUtils invalidateStyleableAndDescendants:self];
+//        [self updateStylesNonRecursively];
+//    }
 }
 
 // Px Wrapped Only

@@ -338,15 +338,15 @@ static const char STYLE_CHILDREN;
 -(void)setTitle:(NSString *)title forState:(UIControlState)state
 {
     [self px_setTitle:title forState:state];
-    [PXStyleUtils invalidateStyleableAndDescendants:self];
-    [self updateStylesNonRecursively];
+//    [PXStyleUtils invalidateStyleableAndDescendants:self];
+//    [self updateStylesNonRecursively];
 }
 
 -(void)setAttributedTitle:(NSAttributedString *)title forState:(UIControlState)state
 {
     [self px_setAttributedTitle:title forState:state];
-    [PXStyleUtils invalidateStyleableAndDescendants:self];
-    [self updateStylesNonRecursively];
+//    [PXStyleUtils invalidateStyleableAndDescendants:self];
+//    [self updateStylesNonRecursively];
 }
 
 // Px Wrapped Only

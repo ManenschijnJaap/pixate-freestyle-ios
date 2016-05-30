@@ -50,6 +50,7 @@
 
     dispatch_once(&onceToken, ^{
         handlers = @{
+                     /*
              @"animation" : ^(PXDeclaration *declaration, PXStylerContext *context) {
                  context.animationInfos = [NSMutableArray arrayWithArray:declaration.animationInfoList];
              },
@@ -141,6 +142,7 @@
                      info.animationFillMode = (PXAnimationFillMode) [value intValue];
                  }
              },
+                      */
         };
     });
 

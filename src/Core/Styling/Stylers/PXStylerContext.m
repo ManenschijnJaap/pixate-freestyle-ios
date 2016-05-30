@@ -175,7 +175,7 @@ static NSString *DEFAULT_FONT = @"Helvetica";
         _shape.fill = [self getCombinedPaints];
 
         // apply stroke, and possible modify geometry bounds
-        if (_boxModel.hasBorder)
+        if (_boxModel.hasBorder && !_boxModel.borderUsesLayer)
         {
             // NOTE: we're using top border since we set all borders the same right now
             CGFloat strokeWidth = _boxModel.borderTopWidth;
@@ -199,7 +199,7 @@ static NSString *DEFAULT_FONT = @"Helvetica";
         }
 
         // set corner radius
-        if ([self.shape isKindOfClass:[PXRectangle class]])
+        if ([self.shape isKindOfClass:[PXRectangle class]] &&  !_boxModel.cornerUsesLayer)
         {
             PXRectangle *rect = (PXRectangle *)self.shape;
 
@@ -340,6 +340,35 @@ static NSString *DEFAULT_FONT = @"Helvetica";
     }
 }
 
+- (void)applyCornerRadiusToLayer:(CALayer *)layer
+{
+    if ([_boxModel hasCornerRadius]) {
+            if ([_boxModel cornerUsesLayer]) {
+                    //All radius are the same size
+                    layer.cornerRadius = [_boxModel radiusTopLeft].width;
+                    layer.masksToBounds = YES;
+                }
+            else {
+                    layer.cornerRadius = 0;
+                }
+        }
+}
+
+- (void)applyBorderToLayer:(CALayer *)layer {
+    if ([_boxModel hasBorder]) {
+            if ([_boxModel borderUsesLayer]) {
+                    //All radius are the same size
+                    UIColor *color = [((PXSolidPaint *)[_boxModel borderTopPaint]) color];
+                    layer.borderColor = color.CGColor;
+                    layer.borderWidth = [_boxModel borderTopWidth];
+                }
+            else {
+                    layer.borderColor = nil;
+                    layer.borderWidth = 0;
+                }
+        }
+}
+
 #pragma mark - Setters
 
 - (void)setShadow:(id<PXShadowPaint>)shadow
@@ -405,8 +434,8 @@ static NSString *DEFAULT_FONT = @"Helvetica";
         result =
                 isRectangle
             &&  (_innerShadow.count == 0)
-            && (_boxModel.hasCornerRadius == NO)
-            && _boxModel.hasBorder == NO
+            && (_boxModel.hasCornerRadius == NO || _boxModel.cornerUsesLayer)
+            && (_boxModel.hasBorder == NO || _boxModel.borderUsesLayer)
             && _imageFill == nil;
     }
 
@@ -434,8 +463,8 @@ static NSString *DEFAULT_FONT = @"Helvetica";
         || (_fill && self.color == nil)     // only non-solid fills require rendering
         || (_innerShadow.count > 0)         // we render inner shadows
         || !isRectangle                     // non-rectangular shapes require rendering
-        || _boxModel.hasCornerRadius        // if we got here, we're a rectangle, but rounding requires rendering
-        || _boxModel.hasBorder              // borders require rendering
+        || (_boxModel.hasCornerRadius && !_boxModel.cornerUsesLayer)        // if we got here, we're a rectangle, but rounding requires rendering
+        || (_boxModel.hasBorder && !_boxModel.borderUsesLayer)              // borders require rendering
     );
 }
 

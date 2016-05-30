@@ -57,7 +57,7 @@ static const char PX_DELEGATE_PROXY; // the proxy for the old delegate
     if (self != UITableView.class)
         return;
     
-    [self swizzleMethod:@selector(setDelegate:) withMethod:@selector(px_setDelegate:)];
+//    [self swizzleMethod:@selector(setDelegate:) withMethod:@selector(px_setDelegate:)];
     
     // Cache this value
     static dispatch_once_t onceToken;
@@ -66,50 +66,50 @@ static const char PX_DELEGATE_PROXY; // the proxy for the old delegate
     });
 }
 
--(void)px_setDelegate:(id<UITableViewDelegate>)delegate
-{
-    // Do not delegate tables embedded in a UIPickerTableView
-    if(delegate
-       && ([self class] == uiPickerTableViewClass) == NO
-       )
-    {
-        id delegateProxy = [self pxDelegateProxy];
-        if ([delegateProxy baseObject])
-            [self px_setDelegate:nil];
-        [delegateProxy setBaseObject:delegate];
-        [self px_setDelegate:delegateProxy];
-    }
-    else
-    {
-        [self px_setDelegate:delegate];
-    }
-}
-
-- (id)pxDelegate
-{
-    id delegate = objc_getAssociatedObject(self, &PX_DELEGATE);
-    
-    if(delegate == nil)
-    {
-        delegate = [[PXUITableViewDelegate alloc] init];
-        objc_setAssociatedObject(self, &PX_DELEGATE, delegate, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    }
-    
-    return delegate;
-}
-
-- (id)pxDelegateProxy
-{
-    id proxy = objc_getAssociatedObject(self, &PX_DELEGATE_PROXY);
-    
-    if(proxy == nil)
-    {
-        proxy = [[PXProxy alloc] initWithBaseOject:nil overridingObject:[self pxDelegate]];
-        objc_setAssociatedObject(self, &PX_DELEGATE_PROXY, proxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    }
-    
-    return proxy;
-}
+//-(void)px_setDelegate:(id<UITableViewDelegate>)delegate
+//{
+//    // Do not delegate tables embedded in a UIPickerTableView
+//    if(delegate
+//       && ([self class] == uiPickerTableViewClass) == NO
+//       )
+//    {
+//        id delegateProxy = [self pxDelegateProxy];
+//        if ([delegateProxy baseObject])
+//            [self px_setDelegate:nil];
+//        [delegateProxy setBaseObject:delegate];
+//        [self px_setDelegate:delegateProxy];
+//    }
+//    else
+//    {
+//        [self px_setDelegate:delegate];
+//    }
+//}
+//
+//- (id)pxDelegate
+//{
+//    id delegate = objc_getAssociatedObject(self, &PX_DELEGATE);
+//    
+//    if(delegate == nil)
+//    {
+//        delegate = [[PXUITableViewDelegate alloc] init];
+//        objc_setAssociatedObject(self, &PX_DELEGATE, delegate, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//    }
+//    
+//    return delegate;
+//}
+//
+//- (id)pxDelegateProxy
+//{
+//    id proxy = objc_getAssociatedObject(self, &PX_DELEGATE_PROXY);
+//    
+//    if(proxy == nil)
+//    {
+//        proxy = [[PXProxy alloc] initWithBaseOject:nil overridingObject:[self pxDelegate]];
+//        objc_setAssociatedObject(self, &PX_DELEGATE_PROXY, proxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//    }
+//    
+//    return proxy;
+//}
 
 /* Don't use right now
  -(void)setDataSource:(id<UITableViewDataSource>)dataSource

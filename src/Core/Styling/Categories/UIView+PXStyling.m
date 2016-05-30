@@ -232,6 +232,10 @@ static NSMutableArray *DYNAMIC_SUBCLASSES;
         //NSLog(@"Found child of UIDatePicker %@", [[self class] description]);
         mode = PXStylingNone;
     }
+    
+    if ([NSStringFromClass([self class]) isEqualToString:@"CAMFlipButton"]) {
+        mode = PXStylingNone;
+    }
 
     //
     // Set the styling mode value on the object
@@ -278,7 +282,8 @@ static NSMutableArray *DYNAMIC_SUBCLASSES;
 
         if (shouldStyle)
         {
-            [self updateStyles];
+//            [self updateStyles];
+            [self updateStylesNonRecursively];
         }
     }
 }

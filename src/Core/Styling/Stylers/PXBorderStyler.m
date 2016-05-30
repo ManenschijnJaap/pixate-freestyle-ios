@@ -202,4 +202,16 @@
     return handlers;
 }
 
+- (void)applyStylesWithContext:(PXStylerContext *)context
+{
+    id<PXStyleable> styleable = context.styleable;
+
+    if ([styleable isKindOfClass:[UIView class]])
+        {
+                [context applyCornerRadiusToLayer:((UIView *)styleable).layer];
+                [context applyBorderToLayer:((UIView *)styleable).layer];
+            }
+    [super applyStylesWithContext:context];
+}
+
 @end

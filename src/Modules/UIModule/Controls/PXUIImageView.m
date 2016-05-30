@@ -132,36 +132,41 @@ static NSDictionary *PSEUDOCLASS_MAP;
 
 - (void)updateStyleWithRuleSet:(PXRuleSet *)ruleSet context:(PXStylerContext *)context
 {
-    UIImage *image = context.backgroundImage;
-    
-    if([PXUtils isIOS7OrGreater])
-    {
-        NSString *renderingMode = [context propertyValueForName:@"rendering-mode"];
+    if (context.usesColorOnly) {
+        [self setBackgroundColor:context.color];
+    }
+    else {
+        UIImage *image = context.backgroundImage;
         
-        if(renderingMode)
+        if([PXUtils isIOS7OrGreater])
         {
-            if([renderingMode isEqualToString:@"original"])
+            NSString *renderingMode = [context propertyValueForName:@"rendering-mode"];
+            
+            if(renderingMode)
             {
-                image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-            }
-            else if([renderingMode isEqualToString:@"template"])
-            {
-                image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-            }
-            else
-            {
-                image = [image imageWithRenderingMode:UIImageRenderingModeAutomatic];
+                if([renderingMode isEqualToString:@"original"])
+                {
+                    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+                }
+                else if([renderingMode isEqualToString:@"template"])
+                {
+                    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+                }
+                else
+                {
+                    image = [image imageWithRenderingMode:UIImageRenderingModeAutomatic];
+                }
             }
         }
-    }
-
-    if([context stateFromStateNameMap:PSEUDOCLASS_MAP] == UIControlStateHighlighted)
-    {
-        [self px_setHighlightedImage:image];
-    }
-    else if (context.usesImage)
-    {
-        [self px_setImage:image];
+        
+        if([context stateFromStateNameMap:PSEUDOCLASS_MAP] == UIControlStateHighlighted)
+        {
+            [self px_setHighlightedImage:image];
+        }
+        else if (context.usesImage)
+        {
+            [self px_setImage:image];
+        }
     }
     
     // TODO: support animated images

@@ -140,6 +140,20 @@
 - (void)applyOuterShadowToLayer:(CALayer *)layer;
 
 /*
+ *  Apply the current corner radius value to the specified layer if all corners are the same
+ *
+ *  @param layer The CALayer
+ */
+- (void)applyCornerRadiusToLayer:(CALayer *)layer;
+
+/*
+   *  Apply the current border style value to the specified layer if all borders are the same and solid
+   *
+   *  @param layer The CALayer
+   */
+- (void)applyBorderToLayer:(CALayer *)layer;
+
+/*
  * Return the background image with the specified bounds
  *
  * @param bounds The bounds to size the image to

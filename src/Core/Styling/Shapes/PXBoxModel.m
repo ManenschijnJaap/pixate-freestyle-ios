@@ -150,6 +150,14 @@
     ||  CGSizeEqualToSize(_radiusBottomLeft, CGSizeZero) == NO;
 }
 
+- (BOOL)cornerUsesLayer {
+    return
+        CGSizeEqualToSize(_radiusTopLeft, _radiusTopRight)
+    && CGSizeEqualToSize(_radiusTopLeft, _radiusBottomLeft)
+    && CGSizeEqualToSize(_radiusTopLeft, _radiusBottomRight);
+
+}
+
 - (BOOL)hasBorder
 {
     return
@@ -157,6 +165,17 @@
     ||  borderRight_.hasContent
     ||  borderBottom_.hasContent
     ||  borderLeft_.hasContent;
+}
+
+- (BOOL)borderUsesLayer {
+    return
+        borderTop_.width == borderRight_.width
+    && borderTop_.width == borderLeft_.width
+    && borderTop_.width == borderBottom_.width
+    && borderTop_.style == PXBorderStyleSolid
+    && borderRight_.style == PXBorderStyleSolid
+    && borderBottom_.style == PXBorderStyleSolid
+    && borderLeft_.style == PXBorderStyleSolid;
 }
 
 - (BOOL)isOpaque

@@ -52,47 +52,47 @@ static const char PX_DATASOURCE_PROXY; // the proxy for the old datasource
 
 @implementation UICollectionView (PXFreestyle)
 
-+ (void)initialize
-{
-    if (self != UICollectionView.class)
-        return;
-    
-    [self swizzleMethod:@selector(setDelegate:) withMethod:@selector(px_setDelegate:)];
-    [self swizzleMethod:@selector(setDataSource:) withMethod:@selector(px_setDataSource:)];
-
-}
-
--(void)px_setDelegate:(id<UICollectionViewDelegate>)delegate
-{
-    if(delegate)
-    {
-        id delegateProxy = [self pxDelegateProxy];
-        if ([delegateProxy baseObject])
-            [self px_setDelegate:nil];
-        [delegateProxy setBaseObject:delegate];
-        [self px_setDelegate:delegateProxy];
-    }
-    else
-    {
-        [self px_setDelegate:delegate];
-    }
-}
-
--(void)px_setDataSource:(id<UICollectionViewDataSource>)dataSource
-{
-    if(dataSource)
-    {
-        id datasourceProxy = [self pxDatasourceProxy];
-        if ([datasourceProxy baseObject])
-            [self px_setDataSource:nil];
-        [datasourceProxy setBaseObject:dataSource];
-        [self px_setDataSource:datasourceProxy];
-    }
-    else
-    {
-        [self px_setDataSource:dataSource];
-    }
-}
+//+ (void)initialize
+//{
+//    if (self != UICollectionView.class)
+//        return;
+//    
+//    [self swizzleMethod:@selector(setDelegate:) withMethod:@selector(px_setDelegate:)];
+//    [self swizzleMethod:@selector(setDataSource:) withMethod:@selector(px_setDataSource:)];
+//
+//}
+//
+//-(void)px_setDelegate:(id<UICollectionViewDelegate>)delegate
+//{
+//    if(delegate)
+//    {
+//        id delegateProxy = [self pxDelegateProxy];
+//        if ([delegateProxy baseObject])
+//            [self px_setDelegate:nil];
+//        [delegateProxy setBaseObject:delegate];
+//        [self px_setDelegate:delegateProxy];
+//    }
+//    else
+//    {
+//        [self px_setDelegate:delegate];
+//    }
+//}
+//
+//-(void)px_setDataSource:(id<UICollectionViewDataSource>)dataSource
+//{
+//    if(dataSource)
+//    {
+//        id datasourceProxy = [self pxDatasourceProxy];
+//        if ([datasourceProxy baseObject])
+//            [self px_setDataSource:nil];
+//        [datasourceProxy setBaseObject:dataSource];
+//        [self px_setDataSource:datasourceProxy];
+//    }
+//    else
+//    {
+//        [self px_setDataSource:dataSource];
+//    }
+//}
 
 #pragma mark - Delegate and DataSource proxy methods
 
@@ -100,44 +100,44 @@ static const char PX_DATASOURCE_PROXY; // the proxy for the old datasource
 // Internal methods for proxys
 //
 
-- (PXUICollectionViewDelegate *)pxDelegate
-{
-    id delegate = objc_getAssociatedObject(self, &PX_DELEGATE);
-    
-    if(delegate == nil)
-    {
-        delegate = [[PXUICollectionViewDelegate alloc] init];
-        objc_setAssociatedObject(self, &PX_DELEGATE, delegate, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    }
-    
-    return delegate;
-}
-
-- (id<UICollectionViewDelegate>)pxDelegateProxy
-{
-    id proxy = objc_getAssociatedObject(self, &PX_DELEGATE_PROXY);
-    
-    if(proxy == nil)
-    {
-        proxy = [[PXProxy alloc] initWithBaseOject:nil overridingObject:[self pxDelegate]];
-        objc_setAssociatedObject(self, &PX_DELEGATE_PROXY, proxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    }
-    
-    return proxy;
-}
-
-- (id<UICollectionViewDataSource>)pxDatasourceProxy
-{
-    id proxy = objc_getAssociatedObject(self, &PX_DATASOURCE_PROXY);
-    
-    if(proxy == nil)
-    {
-        proxy = [[PXProxy alloc] initWithBaseOject:nil overridingObject:[self pxDelegate]];
-        objc_setAssociatedObject(self, &PX_DATASOURCE_PROXY, proxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    }
-    
-    return proxy;
-}
+//- (PXUICollectionViewDelegate *)pxDelegate
+//{
+//    id delegate = objc_getAssociatedObject(self, &PX_DELEGATE);
+//    
+//    if(delegate == nil)
+//    {
+//        delegate = [[PXUICollectionViewDelegate alloc] init];
+//        objc_setAssociatedObject(self, &PX_DELEGATE, delegate, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//    }
+//    
+//    return delegate;
+//}
+//
+//- (id<UICollectionViewDelegate>)pxDelegateProxy
+//{
+//    id proxy = objc_getAssociatedObject(self, &PX_DELEGATE_PROXY);
+//    
+//    if(proxy == nil)
+//    {
+//        proxy = [[PXProxy alloc] initWithBaseOject:nil overridingObject:[self pxDelegate]];
+//        objc_setAssociatedObject(self, &PX_DELEGATE_PROXY, proxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//    }
+//    
+//    return proxy;
+//}
+//
+//- (id<UICollectionViewDataSource>)pxDatasourceProxy
+//{
+//    id proxy = objc_getAssociatedObject(self, &PX_DATASOURCE_PROXY);
+//    
+//    if(proxy == nil)
+//    {
+//        proxy = [[PXProxy alloc] initWithBaseOject:nil overridingObject:[self pxDelegate]];
+//        objc_setAssociatedObject(self, &PX_DATASOURCE_PROXY, proxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//    }
+//    
+//    return proxy;
+//}
 
 @end
 
@@ -179,23 +179,23 @@ static const char PX_DATASOURCE_PROXY; // the proxy for the old datasource
             PXAnimationStyler.sharedInstance,
             
             [[PXGenericStyler alloc] initWithHandlers: @{
-                @"cell-size" :  ^(PXDeclaration *declaration, PXStylerContext *context) {
-                    CGSize size = declaration.sizeValue;
-                    PXUICollectionViewDelegate *delegate = [self pxDelegate];
-                    delegate.itemSize.size = size;
-                },
-             
-                @"cell-width" :  ^(PXDeclaration *declaration, PXStylerContext *context) {
-                    CGFloat width = declaration.floatValue;
-                    PXUICollectionViewDelegate *delegate = [self pxDelegate];
-                    delegate.itemSize.size = CGSizeMake(width, delegate.itemSize.size.height);
-                },
-                
-                @"cell-height" :  ^(PXDeclaration *declaration, PXStylerContext *context) {
-                    CGFloat height = declaration.floatValue;
-                    PXUICollectionViewDelegate *delegate = [self pxDelegate];
-                    delegate.itemSize.size = CGSizeMake(delegate.itemSize.size.width, height);
-                },
+//                @"cell-size" :  ^(PXDeclaration *declaration, PXStylerContext *context) {
+//                    CGSize size = declaration.sizeValue;
+//                    PXUICollectionViewDelegate *delegate = [self pxDelegate];
+//                    delegate.itemSize.size = size;
+//                },
+//             
+//                @"cell-width" :  ^(PXDeclaration *declaration, PXStylerContext *context) {
+//                    CGFloat width = declaration.floatValue;
+//                    PXUICollectionViewDelegate *delegate = [self pxDelegate];
+//                    delegate.itemSize.size = CGSizeMake(width, delegate.itemSize.size.height);
+//                },
+//                
+//                @"cell-height" :  ^(PXDeclaration *declaration, PXStylerContext *context) {
+//                    CGFloat height = declaration.floatValue;
+//                    PXUICollectionViewDelegate *delegate = [self pxDelegate];
+//                    delegate.itemSize.size = CGSizeMake(delegate.itemSize.size.width, height);
+//                },
                 
                 @"selection-mode" : ^(PXDeclaration *declaration, PXStylerContext *context) {
                     PXUICollectionView *view = (PXUICollectionView *)context.styleable;

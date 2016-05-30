@@ -27,8 +27,8 @@ Pod::Spec.new do |s|
   s.author       = { "Pixate" => "info@pixate.com" }
   s.platform     = :ios, '5.1'
   s.source       = {
-        :git => "https://github.com/anton-matosov/pixate-freestyle-ios.git",
-        :tag => s.version.to_s
+        :git => "https://github.com/ManenschijnJaap/pixate-freestyle-ios.git",
+        :branch => 'MO-changes'
   }
 
   s.default_subspec = 'All'

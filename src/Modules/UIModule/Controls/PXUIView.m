@@ -57,9 +57,9 @@ static const char STYLE_CHILDREN;
 
 - (NSArray *)pxStyleChildren
 {
-    NSArray *styleChildren;
+    NSArray *styleChildren = objc_getAssociatedObject(self, &STYLE_CHILDREN);
     
-    if (!objc_getAssociatedObject(self, &STYLE_CHILDREN))
+    if (!styleChildren)
     {
         __weak PXUIView* weakSelf = self;
 
@@ -89,7 +89,7 @@ static const char STYLE_CHILDREN;
         objc_setAssociatedObject(self, &STYLE_CHILDREN, styleChildren, OBJC_ASSOCIATION_COPY_NONATOMIC);
     }
     
-    return [objc_getAssociatedObject(self, &STYLE_CHILDREN) arrayByAddingObjectsFromArray:self.subviews];
+    return [styleChildren arrayByAddingObjectsFromArray:self.subviews];
 }
 
 
