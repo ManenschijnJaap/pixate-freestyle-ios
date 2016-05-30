@@ -50,7 +50,7 @@ void PXForceLoadNSObjectPXSwizzle() {}
 
 + (void)swizzleMethod:(SEL)orig_sel withMethod:(SEL)alt_sel
 {
-	Class c = self;
+    Class c = self;
     Method origMethod = class_getInstanceMethod(c, orig_sel);
     Method altMethod = class_getInstanceMethod(c, alt_sel);
     
