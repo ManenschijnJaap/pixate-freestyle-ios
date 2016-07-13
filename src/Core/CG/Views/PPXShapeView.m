@@ -22,11 +22,11 @@
 //  Copyright (c) 2012 Pixate, Inc. All rights reserved.
 //
 
-#import "PXShapeView.h"
+#import "PPXShapeView.h"
 #import "PXShapeGroup.h"
 #import "PXSVGLoader.h"
 
-@implementation PXShapeView
+@implementation PPXShapeView
 
 #pragma mark - Setters
 

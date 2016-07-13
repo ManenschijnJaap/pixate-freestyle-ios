@@ -22,7 +22,7 @@
 //  Copyright (c) 2012 Pixate, Inc. All rights reserved.
 //
 
-#import "PXUIImageView.h"
+#import "PPXUIImageView.h"
 
 #import "UIView+PXStyling.h"
 #import "UIView+PXStyling-Private.h"
@@ -44,11 +44,11 @@
 
 static NSDictionary *PSEUDOCLASS_MAP;
 
-@implementation PXUIImageView
+@implementation PPXUIImageView
 
 + (void)initialize
 {
-    if (self != PXUIImageView.class)
+    if (self != PPXUIImageView.class)
         return;
     
     [UIView registerDynamicSubclass:self withElementName:@"image-view"];

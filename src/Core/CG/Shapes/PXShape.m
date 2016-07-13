@@ -23,7 +23,7 @@
 //
 
 #import "PXShape.h"
-#import "PXShapeView.h"
+#import "PPXShapeView.h"
 #import "PXShadow.h"
 
 @implementation PXShape

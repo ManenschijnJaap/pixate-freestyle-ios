@@ -28,7 +28,7 @@
 /**
  *  A PXShape sub-class used to render paths
  */
-@interface PXPath : PXShape
+@interface PPXPath : PXShape
 
 /**
  *  Generate a new PXPath instance using the specified data
@@ -39,7 +39,7 @@
  *  @param data A string of path data
  *  @returns A newly allocated PXPath instance
  */
-+ (PXPath *)createPathFromPathData:(NSString *)data;
++ (PPXPath *)createPathFromPathData:(NSString *)data;
 
 /**
  *  Add a close command to the current path

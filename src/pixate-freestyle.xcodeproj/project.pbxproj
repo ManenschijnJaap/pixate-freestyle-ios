@@ -855,8 +855,8 @@
 		9C98661F18C0499000C71922 /* PXLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98647518C0498F00C71922 /* PXLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98662018C0499000C71922 /* PXLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98647618C0498F00C71922 /* PXLine.m */; };
 		9C98662118C0499000C71922 /* PXPaintable.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98647718C0498F00C71922 /* PXPaintable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98662218C0499000C71922 /* PXPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98647818C0498F00C71922 /* PXPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98662318C0499000C71922 /* PXPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98647918C0498F00C71922 /* PXPath.m */; };
+		9C98662218C0499000C71922 /* PPXPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98647818C0498F00C71922 /* PPXPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C98662318C0499000C71922 /* PPXPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98647918C0498F00C71922 /* PPXPath.m */; };
 		9C98662418C0499000C71922 /* PXPie.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98647A18C0498F00C71922 /* PXPie.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98662518C0499000C71922 /* PXPie.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98647B18C0498F00C71922 /* PXPie.m */; };
 		9C98662618C0499000C71922 /* PXPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98647C18C0498F00C71922 /* PXPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -881,8 +881,8 @@
 		9C98663918C0499000C71922 /* PXStrokeRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98649018C0498F00C71922 /* PXStrokeRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98663A18C0499000C71922 /* PXStrokeStroke.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98649118C0498F00C71922 /* PXStrokeStroke.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98663B18C0499000C71922 /* PXStrokeStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98649218C0498F00C71922 /* PXStrokeStroke.m */; };
-		9C98663C18C0499000C71922 /* PXShapeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98649418C0498F00C71922 /* PXShapeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98663D18C0499000C71922 /* PXShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98649518C0498F00C71922 /* PXShapeView.m */; };
+		9C98663C18C0499000C71922 /* PPXShapeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98649418C0498F00C71922 /* PPXShapeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C98663D18C0499000C71922 /* PPXShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98649518C0498F00C71922 /* PPXShapeView.m */; };
 		9C98663E18C0499000C71922 /* PXDelegateLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98649718C0498F00C71922 /* PXDelegateLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98663F18C0499000C71922 /* PXDelegateLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98649818C0498F00C71922 /* PXDelegateLogger.m */; };
 		9C98664018C0499000C71922 /* PXFileFunctionLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98649918C0498F00C71922 /* PXFileFunctionLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1098,8 +1098,8 @@
 		9C9867FB18C04BA000C71922 /* PXUIActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98679618C04BA000C71922 /* PXUIActionSheet.m */; };
 		9C9867FC18C04BA000C71922 /* PXUIActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98679718C04BA000C71922 /* PXUIActivityIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C9867FD18C04BA000C71922 /* PXUIActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98679818C04BA000C71922 /* PXUIActivityIndicatorView.m */; };
-		9C9867FE18C04BA000C71922 /* PXUIButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98679918C04BA000C71922 /* PXUIButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C9867FF18C04BA000C71922 /* PXUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98679A18C04BA000C71922 /* PXUIButton.m */; };
+		9C9867FE18C04BA000C71922 /* PPXUIButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98679918C04BA000C71922 /* PPXUIButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C9867FF18C04BA000C71922 /* PPXUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98679A18C04BA000C71922 /* PPXUIButton.m */; };
 		9C98680018C04BA000C71922 /* PXUICollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98679B18C04BA000C71922 /* PXUICollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98680118C04BA000C71922 /* PXUICollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98679C18C04BA000C71922 /* PXUICollectionView.m */; };
 		9C98680218C04BA000C71922 /* PXUICollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98679D18C04BA000C71922 /* PXUICollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1108,10 +1108,10 @@
 		9C98680518C04BA000C71922 /* PXUICollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9867A018C04BA000C71922 /* PXUICollectionViewDelegate.m */; };
 		9C98680618C04BA000C71922 /* PXUIDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9867A118C04BA000C71922 /* PXUIDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98680718C04BA000C71922 /* PXUIDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9867A218C04BA000C71922 /* PXUIDatePicker.m */; };
-		9C98680818C04BA000C71922 /* PXUIImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9867A318C04BA000C71922 /* PXUIImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98680918C04BA000C71922 /* PXUIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9867A418C04BA000C71922 /* PXUIImageView.m */; };
-		9C98680A18C04BA000C71922 /* PXUILabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9867A518C04BA000C71922 /* PXUILabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98680B18C04BA000C71922 /* PXUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9867A618C04BA000C71922 /* PXUILabel.m */; };
+		9C98680818C04BA000C71922 /* PPXUIImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9867A318C04BA000C71922 /* PPXUIImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C98680918C04BA000C71922 /* PPXUIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9867A418C04BA000C71922 /* PPXUIImageView.m */; };
+		9C98680A18C04BA000C71922 /* PPXUILabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9867A518C04BA000C71922 /* PPXUILabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C98680B18C04BA000C71922 /* PPXUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9867A618C04BA000C71922 /* PPXUILabel.m */; };
 		9C98680C18C04BA000C71922 /* PXUILayoutContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9867A718C04BA000C71922 /* PXUILayoutContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98680D18C04BA000C71922 /* PXUILayoutContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9867A818C04BA000C71922 /* PXUILayoutContainerView.m */; };
 		9C98680E18C04BA000C71922 /* PXUINavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9867A918C04BA000C71922 /* PXUINavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1178,7 +1178,6 @@
 		9C98684B18C04BA000C71922 /* UITabBarItem+PXStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9867E718C04BA000C71922 /* UITabBarItem+PXStyling.m */; };
 		9C98684E18C04C4700C71922 /* PixateFreestyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98684C18C04C4700C71922 /* PixateFreestyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98684F18C04C4700C71922 /* PixateFreestyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98684D18C04C4700C71922 /* PixateFreestyle.m */; };
-		F3ABDDD541E931FD32D06C68 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0904B6EB8A59C81FBB135EF5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2061,8 +2060,8 @@
 		9C98647518C0498F00C71922 /* PXLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXLine.h; sourceTree = "<group>"; };
 		9C98647618C0498F00C71922 /* PXLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXLine.m; sourceTree = "<group>"; };
 		9C98647718C0498F00C71922 /* PXPaintable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXPaintable.h; sourceTree = "<group>"; };
-		9C98647818C0498F00C71922 /* PXPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXPath.h; sourceTree = "<group>"; };
-		9C98647918C0498F00C71922 /* PXPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXPath.m; sourceTree = "<group>"; };
+		9C98647818C0498F00C71922 /* PPXPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPXPath.h; sourceTree = "<group>"; };
+		9C98647918C0498F00C71922 /* PPXPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPXPath.m; sourceTree = "<group>"; };
 		9C98647A18C0498F00C71922 /* PXPie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXPie.h; sourceTree = "<group>"; };
 		9C98647B18C0498F00C71922 /* PXPie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXPie.m; sourceTree = "<group>"; };
 		9C98647C18C0498F00C71922 /* PXPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXPolygon.h; sourceTree = "<group>"; };
@@ -2087,8 +2086,8 @@
 		9C98649018C0498F00C71922 /* PXStrokeRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXStrokeRenderer.h; sourceTree = "<group>"; };
 		9C98649118C0498F00C71922 /* PXStrokeStroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXStrokeStroke.h; sourceTree = "<group>"; };
 		9C98649218C0498F00C71922 /* PXStrokeStroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXStrokeStroke.m; sourceTree = "<group>"; };
-		9C98649418C0498F00C71922 /* PXShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXShapeView.h; sourceTree = "<group>"; };
-		9C98649518C0498F00C71922 /* PXShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXShapeView.m; sourceTree = "<group>"; };
+		9C98649418C0498F00C71922 /* PPXShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPXShapeView.h; sourceTree = "<group>"; };
+		9C98649518C0498F00C71922 /* PPXShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPXShapeView.m; sourceTree = "<group>"; };
 		9C98649718C0498F00C71922 /* PXDelegateLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXDelegateLogger.h; sourceTree = "<group>"; };
 		9C98649818C0498F00C71922 /* PXDelegateLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXDelegateLogger.m; sourceTree = "<group>"; };
 		9C98649918C0498F00C71922 /* PXFileFunctionLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXFileFunctionLogFormatter.h; sourceTree = "<group>"; };
@@ -2304,8 +2303,8 @@
 		9C98679618C04BA000C71922 /* PXUIActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXUIActionSheet.m; sourceTree = "<group>"; };
 		9C98679718C04BA000C71922 /* PXUIActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUIActivityIndicatorView.h; sourceTree = "<group>"; };
 		9C98679818C04BA000C71922 /* PXUIActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXUIActivityIndicatorView.m; sourceTree = "<group>"; };
-		9C98679918C04BA000C71922 /* PXUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUIButton.h; sourceTree = "<group>"; };
-		9C98679A18C04BA000C71922 /* PXUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXUIButton.m; sourceTree = "<group>"; };
+		9C98679918C04BA000C71922 /* PPXUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPXUIButton.h; sourceTree = "<group>"; };
+		9C98679A18C04BA000C71922 /* PPXUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPXUIButton.m; sourceTree = "<group>"; };
 		9C98679B18C04BA000C71922 /* PXUICollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUICollectionView.h; sourceTree = "<group>"; };
 		9C98679C18C04BA000C71922 /* PXUICollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXUICollectionView.m; sourceTree = "<group>"; };
 		9C98679D18C04BA000C71922 /* PXUICollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUICollectionViewCell.h; sourceTree = "<group>"; };
@@ -2314,10 +2313,10 @@
 		9C9867A018C04BA000C71922 /* PXUICollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXUICollectionViewDelegate.m; sourceTree = "<group>"; };
 		9C9867A118C04BA000C71922 /* PXUIDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUIDatePicker.h; sourceTree = "<group>"; };
 		9C9867A218C04BA000C71922 /* PXUIDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXUIDatePicker.m; sourceTree = "<group>"; };
-		9C9867A318C04BA000C71922 /* PXUIImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUIImageView.h; sourceTree = "<group>"; };
-		9C9867A418C04BA000C71922 /* PXUIImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXUIImageView.m; sourceTree = "<group>"; };
-		9C9867A518C04BA000C71922 /* PXUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUILabel.h; sourceTree = "<group>"; };
-		9C9867A618C04BA000C71922 /* PXUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXUILabel.m; sourceTree = "<group>"; };
+		9C9867A318C04BA000C71922 /* PPXUIImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPXUIImageView.h; sourceTree = "<group>"; };
+		9C9867A418C04BA000C71922 /* PPXUIImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPXUIImageView.m; sourceTree = "<group>"; };
+		9C9867A518C04BA000C71922 /* PPXUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPXUILabel.h; sourceTree = "<group>"; };
+		9C9867A618C04BA000C71922 /* PPXUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPXUILabel.m; sourceTree = "<group>"; };
 		9C9867A718C04BA000C71922 /* PXUILayoutContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUILayoutContainerView.h; sourceTree = "<group>"; };
 		9C9867A818C04BA000C71922 /* PXUILayoutContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXUILayoutContainerView.m; sourceTree = "<group>"; };
 		9C9867A918C04BA000C71922 /* PXUINavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUINavigationBar.h; sourceTree = "<group>"; };
@@ -2401,7 +2400,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C84A63E18AE9CB600E7CDA7 /* Foundation.framework in Frameworks */,
-				F3ABDDD541E931FD32D06C68 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3563,8 +3561,8 @@
 				9C98647518C0498F00C71922 /* PXLine.h */,
 				9C98647618C0498F00C71922 /* PXLine.m */,
 				9C98647718C0498F00C71922 /* PXPaintable.h */,
-				9C98647818C0498F00C71922 /* PXPath.h */,
-				9C98647918C0498F00C71922 /* PXPath.m */,
+				9C98647818C0498F00C71922 /* PPXPath.h */,
+				9C98647918C0498F00C71922 /* PPXPath.m */,
 				9C98647A18C0498F00C71922 /* PXPie.h */,
 				9C98647B18C0498F00C71922 /* PXPie.m */,
 				9C98647C18C0498F00C71922 /* PXPolygon.h */,
@@ -3603,8 +3601,8 @@
 		9C98649318C0498F00C71922 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9C98649418C0498F00C71922 /* PXShapeView.h */,
-				9C98649518C0498F00C71922 /* PXShapeView.m */,
+				9C98649418C0498F00C71922 /* PPXShapeView.h */,
+				9C98649518C0498F00C71922 /* PPXShapeView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -4022,8 +4020,8 @@
 				9C98679618C04BA000C71922 /* PXUIActionSheet.m */,
 				9C98679718C04BA000C71922 /* PXUIActivityIndicatorView.h */,
 				9C98679818C04BA000C71922 /* PXUIActivityIndicatorView.m */,
-				9C98679918C04BA000C71922 /* PXUIButton.h */,
-				9C98679A18C04BA000C71922 /* PXUIButton.m */,
+				9C98679918C04BA000C71922 /* PPXUIButton.h */,
+				9C98679A18C04BA000C71922 /* PPXUIButton.m */,
 				9C98679B18C04BA000C71922 /* PXUICollectionView.h */,
 				9C98679C18C04BA000C71922 /* PXUICollectionView.m */,
 				9C98679D18C04BA000C71922 /* PXUICollectionViewCell.h */,
@@ -4032,10 +4030,10 @@
 				9C9867A018C04BA000C71922 /* PXUICollectionViewDelegate.m */,
 				9C9867A118C04BA000C71922 /* PXUIDatePicker.h */,
 				9C9867A218C04BA000C71922 /* PXUIDatePicker.m */,
-				9C9867A318C04BA000C71922 /* PXUIImageView.h */,
-				9C9867A418C04BA000C71922 /* PXUIImageView.m */,
-				9C9867A518C04BA000C71922 /* PXUILabel.h */,
-				9C9867A618C04BA000C71922 /* PXUILabel.m */,
+				9C9867A318C04BA000C71922 /* PPXUIImageView.h */,
+				9C9867A418C04BA000C71922 /* PPXUIImageView.m */,
+				9C9867A518C04BA000C71922 /* PPXUILabel.h */,
+				9C9867A618C04BA000C71922 /* PPXUILabel.m */,
 				9C9867A718C04BA000C71922 /* PXUILayoutContainerView.h */,
 				9C9867A818C04BA000C71922 /* PXUILayoutContainerView.m */,
 				9C9867A918C04BA000C71922 /* PXUINavigationBar.h */,
@@ -4185,7 +4183,7 @@
 				9C98660218C0499000C71922 /* PXPaintGroup.h in Headers */,
 				9C23048718DA126300969D18 /* MAMethodSignatureCache.h in Headers */,
 				9C98664018C0499000C71922 /* PXFileFunctionLogFormatter.h in Headers */,
-				9C9867FE18C04BA000C71922 /* PXUIButton.h in Headers */,
+				9C9867FE18C04BA000C71922 /* PPXUIButton.h in Headers */,
 				9C98662418C0499000C71922 /* PXPie.h in Headers */,
 				9C98673218C0499000C71922 /* PXBoxModel.h in Headers */,
 				9C98668A18C0499000C71922 /* PXChildCombinator.h in Headers */,
@@ -4195,7 +4193,7 @@
 				9C9867F418C04BA000C71922 /* PXMKAnnotationView.h in Headers */,
 				9C9865F218C0499000C71922 /* PXDimension.h in Headers */,
 				9C98667118C0499000C71922 /* PXCacheManager.h in Headers */,
-				9C98680A18C04BA000C71922 /* PXUILabel.h in Headers */,
+				9C98680A18C04BA000C71922 /* PPXUILabel.h in Headers */,
 				9C9865EE18C0499000C71922 /* PXForceLoadCGCategories.h in Headers */,
 				9C23048618DA126300969D18 /* MAFutureInternal.h in Headers */,
 				9C98660418C0499000C71922 /* PXRadialGradient.h in Headers */,
@@ -4212,7 +4210,7 @@
 				9C98661F18C0499000C71922 /* PXLine.h in Headers */,
 				9C98675318C0499000C71922 /* PXStylerBase.h in Headers */,
 				9C98672F18C0499000C71922 /* PXSelector.h in Headers */,
-				9C98680818C04BA000C71922 /* PXUIImageView.h in Headers */,
+				9C98680818C04BA000C71922 /* PPXUIImageView.h in Headers */,
 				9C98680C18C04BA000C71922 /* PXUILayoutContainerView.h in Headers */,
 				9C9867F018C04BA000C71922 /* PXForceLoadControls.h in Headers */,
 				9C98667B18C0499000C71922 /* NSDictionary+PXObject.h in Headers */,
@@ -4223,8 +4221,8 @@
 				9C98661B18C0499000C71922 /* PXCircle.h in Headers */,
 				9C98665718C0499000C71922 /* PXLexemeCreator.h in Headers */,
 				9C98681018C04BA000C71922 /* PXUIPageControl.h in Headers */,
-				9C98662218C0499000C71922 /* PXPath.h in Headers */,
-				9C98663C18C0499000C71922 /* PXShapeView.h in Headers */,
+				9C98662218C0499000C71922 /* PPXPath.h in Headers */,
+				9C98663C18C0499000C71922 /* PPXShapeView.h in Headers */,
 				9C9865F018C0499000C71922 /* UIColor+PXColors.h in Headers */,
 				9C98682E18C04BA000C71922 /* PXUITableViewDelegate.h in Headers */,
 				9C9867EC18C04BA000C71922 /* PXKeyframeAnimation.h in Headers */,
@@ -4379,12 +4377,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C84A65D18AE9CB600E7CDA7 /* Build configuration list for PBXNativeTarget "pixate-freestyle" */;
 			buildPhases = (
-				3EF6E6323971E42B4FCC828B /* Check Pods Manifest.lock */,
 				9C4DB95D18AEC89B00AE80B2 /* Headers */,
 				9C84A63618AE9CB600E7CDA7 /* Sources */,
 				9C84A63718AE9CB600E7CDA7 /* Frameworks */,
 				9C84A63818AE9CB600E7CDA7 /* CopyFiles */,
-				DC0466452A113ED50C94F0C1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -5181,36 +5177,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-		3EF6E6323971E42B4FCC828B /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DC0466452A113ED50C94F0C1 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* Begin PBXSourcesBuildPhase section */
 		9C23049118DA27CE00969D18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -5229,7 +5195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C98680B18C04BA000C71922 /* PXUILabel.m in Sources */,
+				9C98680B18C04BA000C71922 /* PPXUILabel.m in Sources */,
 				0AC10E811A783D6800FA95C9 /* PXSourceWriter.m in Sources */,
 				9C98683118C04BA000C71922 /* PXUITableViewHeaderFooterView.m in Sources */,
 				9C98683518C04BA000C71922 /* PXUITextView.m in Sources */,
@@ -5259,7 +5225,7 @@
 				9C98670618C0499000C71922 /* PXStylesheetLexeme.m in Sources */,
 				9C98672218C0499000C71922 /* PXAttributeSelectorOperator.m in Sources */,
 				9C98674718C0499000C71922 /* PXGenericStyler.m in Sources */,
-				9C98663D18C0499000C71922 /* PXShapeView.m in Sources */,
+				9C98663D18C0499000C71922 /* PPXShapeView.m in Sources */,
 				9C98682118C04BA000C71922 /* PXUISlider.m in Sources */,
 				9C98668418C0499000C71922 /* PXForceLoadStylingCategories.m in Sources */,
 				9C98684718C04BA000C71922 /* UIBarItem+PXStyling.m in Sources */,
@@ -5268,7 +5234,7 @@
 				9C98663218C0499000C71922 /* PXText.m in Sources */,
 				9C98665018C0499000C71922 /* PXNotificationInfo.m in Sources */,
 				9C98684F18C04C4700C71922 /* PixateFreestyle.m in Sources */,
-				9C98680918C04BA000C71922 /* PXUIImageView.m in Sources */,
+				9C98680918C04BA000C71922 /* PPXUIImageView.m in Sources */,
 				9C98661418C0499000C71922 /* PXShadowGroup.m in Sources */,
 				9C9866F018C0499000C71922 /* PXFontEntry.m in Sources */,
 				9C98670218C0499000C71922 /* PXMediaGroup.m in Sources */,
@@ -5378,7 +5344,7 @@
 				9C98682F18C04BA000C71922 /* PXUITableViewDelegate.m in Sources */,
 				9C98684518C04BA000C71922 /* UIBarButtonItem+PXStyling.m in Sources */,
 				9C98682918C04BA000C71922 /* PXUITableView.m in Sources */,
-				9C9867FF18C04BA000C71922 /* PXUIButton.m in Sources */,
+				9C9867FF18C04BA000C71922 /* PPXUIButton.m in Sources */,
 				9C98672818C0499000C71922 /* PXNotPseudoClass.m in Sources */,
 				9C98676218C0499000C71922 /* PXClassUtils.m in Sources */,
 				9C98682318C04BA000C71922 /* PXUIStepper.m in Sources */,
@@ -5388,7 +5354,7 @@
 				9C98680118C04BA000C71922 /* PXUICollectionView.m in Sources */,
 				9C98677E18C04A9800C71922 /* NSObject+PXSubclass.m in Sources */,
 				9C98668B18C0499000C71922 /* PXChildCombinator.m in Sources */,
-				9C98662318C0499000C71922 /* PXPath.m in Sources */,
+				9C98662318C0499000C71922 /* PPXPath.m in Sources */,
 				9C98667A18C0499000C71922 /* NSDictionary+PXCSSEncoding.m in Sources */,
 				9C9866F818C0499000C71922 /* PXFontInfo.m in Sources */,
 				9C98673718C0499000C71922 /* PXAttributedTextStyler.m in Sources */,
@@ -5584,7 +5550,7 @@
 					YY_NO_INPUT,
 					"DEBUG=1",
 				);
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -5607,7 +5573,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pixate-freestyle-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = YY_NO_INPUT;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,

@@ -22,23 +22,23 @@
 //  Copyright (c) 2012 Pixate, Inc. All rights reserved.
 //
 
-#import "PXPath.h"
+#import "PPXPath.h"
 #import "PXEllipticalArc.h"
 #import "NSScanner+PXFloat.h"
 #import "PixateFreestyle.h"
 #import "PXMath.h"
 #import "PXVector.h"
 
-@implementation PXPath
+@implementation PPXPath
 {
     CGMutablePathRef pathPath;
 }
 
 #pragma mark - Static Methods
 
-+ (PXPath *)createPathFromPathData:(NSString *)data
++ (PPXPath *)createPathFromPathData:(NSString *)data
 {
-    PXPath *path = [[PXPath alloc] init];
+    PPXPath *path = [[PPXPath alloc] init];
 
     NSScanner *scanner = [NSScanner scannerWithString:data];
     NSCharacterSet *skipSet = [NSCharacterSet characterSetWithCharactersInString:@" \r\n,"];

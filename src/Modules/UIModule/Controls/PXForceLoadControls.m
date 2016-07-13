@@ -35,10 +35,10 @@
 #import "PXMPVolumeView.h"
 #import "PXUIActionSheet.h"
 #import "PXUIActivityIndicatorView.h"
-#import "PXUIButton.h"
+#import "PPXUIButton.h"
 #import "PXUIDatePicker.h"
-#import "PXUIImageView.h"  
-#import "PXUILabel.h"
+#import "PPXUIImageView.h"
+#import "PPXUILabel.h"
 #import "PXUIPageControl.h"
 #import "PXUIPickerView.h"
 #import "PXUIProgressView.h"
@@ -72,10 +72,10 @@
     [PXMPVolumeView class];
     [PXUIActionSheet class];
     [PXUIActivityIndicatorView class];
-    [PXUIButton class];
+    [PPXUIButton class];
     [PXUIDatePicker class];
-    [PXUIImageView class];
-    [PXUILabel class];
+    [PPXUIImageView class];
+    [PPXUILabel class];
     [PXUIPageControl class];
     [PXUIPickerView class];
     [PXUIProgressView class];

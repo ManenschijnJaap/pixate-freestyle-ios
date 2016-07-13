@@ -55,7 +55,7 @@
 
 
 #import "NSObject+PXSubclass.h"
-#import "PXUILabel.h"
+#import "PPXUILabel.h"
 
 static NSDictionary *PSEUDOCLASS_MAP;
 static NSDictionary *LABEL_PSEUDOCLASS_MAP;

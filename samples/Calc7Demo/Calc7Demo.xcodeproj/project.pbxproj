@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9C0BF1591768EAA000EF4D34 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C833AC51766D6AB00A02773 /* CoreText.framework */; };
-		9C4ACD4418AF105D008F5A2F /* PixateFreestyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4ACD4318AF105D008F5A2F /* PixateFreestyle.framework */; };
 		9C833A721766D65100A02773 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C833A711766D65100A02773 /* UIKit.framework */; };
 		9C833A741766D65100A02773 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C833A731766D65100A02773 /* Foundation.framework */; };
 		9C833A761766D65100A02773 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C833A751766D65100A02773 /* CoreGraphics.framework */; };
@@ -54,7 +53,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C0BF1591768EAA000EF4D34 /* CoreText.framework in Frameworks */,
-				9C4ACD4418AF105D008F5A2F /* PixateFreestyle.framework in Frameworks */,
 				9C833ACA1766D70200A02773 /* QuartzCore.framework in Frameworks */,
 				9C833A761766D65100A02773 /* CoreGraphics.framework in Frameworks */,
 				9C833A721766D65100A02773 /* UIKit.framework in Frameworks */,

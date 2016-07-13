@@ -23,7 +23,7 @@
 //
 
 #import "PXImagePaint.h"
-#import "PXShapeView.h"
+#import "PPXShapeView.h"
 #import "MAFuture.h"
 
 @implementation PXImagePaint
@@ -69,7 +69,7 @@
         // create image
         if ([self hasSVGImageURL])
         {
-            PXShapeView *shapeView = [[PXShapeView alloc] initWithFrame:bounds];
+            PPXShapeView *shapeView = [[PPXShapeView alloc] initWithFrame:bounds];
 
             [shapeView loadSceneFromURL:_imageURL];
             image = [shapeView renderToImage];

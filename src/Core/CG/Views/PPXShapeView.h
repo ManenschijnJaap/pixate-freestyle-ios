@@ -28,7 +28,7 @@
 /**
  *  PXShapeView serves as a convenience class for displaying vector graphics as defined by Pixate's ShapeKit.
  */
-@interface PXShapeView : UIView
+@interface PPXShapeView : UIView
 
 /**
  *  The top-level scene being rendered into this view

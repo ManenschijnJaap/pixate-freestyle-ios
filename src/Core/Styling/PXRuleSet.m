@@ -24,7 +24,7 @@
 
 #import "PXRuleSet.h"
 #import "PXSourceWriter.h"
-#import "PXShapeView.h"
+#import "PPXShapeView.h"
 #import "PXFontRegistry.h"
 #import "PXCombinator.h"
 

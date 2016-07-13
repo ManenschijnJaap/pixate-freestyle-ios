@@ -8,7 +8,7 @@
 
 #import "ImageBasedTests.h"
 #import <XCTest/XCTest.h>
-#import "PXShapeView.h"
+#import "PPXShapeView.h"
 #import "PXShapeGroup.h"
 
 //#define WRITE_SVG_TO_DISK
@@ -62,7 +62,7 @@
     NSString *path = [[NSBundle bundleWithIdentifier:@"com.pixate.pixate-freestyleTests"] pathForResource:name ofType:@"svg"];
 
     // create view
-    PXShapeView *shapeView = [[PXShapeView alloc] init];
+    PPXShapeView *shapeView = [[PPXShapeView alloc] init];
 
     // load SVG image
     [shapeView loadSceneFromURL:[NSURL fileURLWithPath:path]];

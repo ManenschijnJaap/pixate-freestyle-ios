@@ -52,7 +52,7 @@
 #import "PXEllipse.h"
 #import "PXLine.h"
 #import "PXPaintable.h"
-#import "PXPath.h"
+#import "PPXPath.h"
 #import "PXPie.h"
 #import "PXPolygon.h"
 #import "PXRectangle.h"
@@ -72,4 +72,4 @@
 #import "PXStrokeStroke.h"
 
 // views
-#import "PXShapeView.h"
+#import "PPXShapeView.h"
