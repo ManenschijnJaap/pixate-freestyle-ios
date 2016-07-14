@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '5.1'
   s.source       = {
         :git => "https://github.com/ManenschijnJaap/pixate-freestyle-ios.git",
-        :branch => 'ios10'
+        :branch => 'MO-changes'
   }
 
   s.default_subspec = 'All'
